@@ -1,0 +1,12 @@
+#include "Ponto.hpp"
+
+Ponto::Ponto( double x, double y ) : x( x ), y( y ) {}
+Ponto Ponto::operator + ( const Ponto &p ) const {
+    return Ponto{ x + p.x, y + p.y };
+}
+Ponto Ponto::operator - ( const Ponto &p ) const {
+    return Ponto{ x - p.x, y - p.y };
+}
+long long Ponto::cross( const Ponto &p ) const {
+    return x * p.y - y * p.x;
+}
