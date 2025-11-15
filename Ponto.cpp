@@ -7,6 +7,6 @@ Ponto Ponto::operator + ( const Ponto &p ) const {
 Ponto Ponto::operator - ( const Ponto &p ) const {
     return Ponto{ x - p.x, y - p.y };
 }
-long long Ponto::cross( const Ponto &p ) const {
-    return x * p.y - y * p.x;
+double Ponto::cross( const Ponto &p ) const {
+    return x * p.y - y * p.x; // double * double resulta em double
 }
