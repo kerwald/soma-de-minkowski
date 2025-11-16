@@ -12,7 +12,7 @@ LDFLAGS = -Lp8g
 LIBS = -lp8g++
 TARGET = main.exe
 
-# AUTOMATIZAÇÃO 1: Encontra automaticamente todos os arquivos .cpp na pasta.
+# Encontra automaticamente todos os arquivos .cpp na pasta.
 SRCS = $(wildcard *.cpp)
 
 # A lista de objetos é gerada a partir da lista de fontes
@@ -45,6 +45,6 @@ clean:
 	del /f /q $(TARGET) $(OBJS) $(OBJS:.o=.d) 2>nul || (exit 0)
 	@echo "Limpeza concluida."
 
-# AUTOMATIZAÇÃO 2: Inclui todos os arquivos de dependência (.d) gerados pelo -MMD.
+# Inclui todos os arquivos de dependência (.d) gerados pelo -MMD.
 # Isso garante que se um arquivo .h mudar, o .cpp correspondente será recompilado.
 -include $(OBJS:.o=.d)
