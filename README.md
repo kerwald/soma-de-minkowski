@@ -73,7 +73,7 @@ Para analisar os resultados, abra o notebook **`graficos_soma_de_minkowski.ipynb
     * Gráfico de Vértices Resultantes vs. Vértices de Entrada.
     * Análise da distribuição das distâncias mínimas.
 
-🧠 Sobre a Soma de Minkowski
+## 🧠 Sobre a Soma de Minkowski
 
 A Soma de Minkowski de dois conjuntos A e B é definida matematicamente como:
 
@@ -81,7 +81,11 @@ A Soma de Minkowski de dois conjuntos A e B é definida matematicamente como:
 
 No contexto de planejamento de movimento robótico, esta operação é usada para calcular o Espaço de Configuração (C-Space). Ao "expandir" os obstáculos (Obstáculo ⊕ -Robô), podemos tratar o robô como um simples ponto, simplificando drasticamente o problema de detecção de colisão e planejamento de rotas.
 
-📚 Referências
+## Demonstração
+Link para o video demonstrativo abaixo:   
+https://drive.google.com/file/d/1iJFxtxslqMMG196eWWF1uOL8iSv5yZLg/view?usp=sharing  
+
+## 📚 Referências
 
   Conceitos de Geometria Computacional para Planejamento de Movimento.
 
