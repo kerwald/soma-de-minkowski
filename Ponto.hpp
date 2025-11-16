@@ -6,5 +6,7 @@ struct Ponto{
     Ponto operator + ( const Ponto &p ) const;
     Ponto operator - ( const Ponto &p ) const;
     double cross( const Ponto &p ) const; 
+    double lengthSq() const;
+    double length() const;
     
 };

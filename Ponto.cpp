@@ -1,4 +1,5 @@
 #include "Ponto.hpp"
+#include <cmath>
 
 Ponto::Ponto( double x, double y ) : x( x ), y( y ) {}
 Ponto Ponto::operator + ( const Ponto &p ) const {
@@ -9,4 +10,10 @@ Ponto Ponto::operator - ( const Ponto &p ) const {
 }
 double Ponto::cross( const Ponto &p ) const {
     return x * p.y - y * p.x; // double * double resulta em double
+}
+double Ponto::lengthSq() const { 
+    return x * x + y * y; 
+}
+double Ponto::length() const { 
+    return std::sqrt(lengthSq()); 
 }
